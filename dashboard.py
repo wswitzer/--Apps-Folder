@@ -6,7 +6,7 @@ import pandas as pd
 # --- Data Loading ---
 # Assume the JSON data is saved in 'analysis_data.json' in the same directory
 try:
-    with open('data/cross_document_analysis_data.json', 'r') as f:
+    with open('cross_document_analysis_data.json', 'r') as f:
         data = json.load(f)
 except FileNotFoundError:
     st.error("Error: cross_document_analysis_data.json.json not found. Please ensure the JSON data is saved in this file.")
